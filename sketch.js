@@ -78,14 +78,23 @@ function draw() {
 //função para colisão, nome: collisionWithBoat
 //ela receberá a bala através do parametro index para executar 
 //aquilo que está dentro dela 
-/*function collisionWithBoat(index) {
- 
-     
-        
+function collisionWithBoat(index) {
+ for (var i = 0; i < boats.length; i++) {
+    if (balls[index] !== undefined && boats[i] !== undefined) {
+      var collision = Matter.SAT.collides(balls[index].body, boats[i].body);
 
+      
+      if (collision.collided) {
+        //quando chegar aqui ir para boats montar o método
+        boats[i].remove(i);
 
-       
-}*/
+        //balls[index].remove(index);
+        Matter.World.remove(world, balls[index].body);
+        delete balls[index];
+      }
+    }
+  }
+}
    
   
 
