@@ -13,12 +13,12 @@ class Boat {
 
   //ativar método remove
   //remove o barco depois de 2 segundos 
-  /*remove(i) {
+  remove(i) {
     setTimeout(() => {
       Matter.World.remove(world, boats[i].body);
       delete boats[i];
     }, 2000);
-  }*/
+  }
 
 
   //método para exibir os barcos
