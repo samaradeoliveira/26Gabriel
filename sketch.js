@@ -67,7 +67,7 @@ function draw() {
     //chamando a função que exibe balas conforme o for percorre a matriz
     showCannonBalls(balls[i], i);
     //chamar a função de colisão
-   
+   collisionWithBoat();
 
   }
 
