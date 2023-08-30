@@ -13,14 +13,14 @@ class CannonBall {
 
   //ativar o método remove
   //remove a bala depois de 1 segundo
-  /*remove(index) {
+  remove(index) {
     Matter.Body.setVelocity(this.body, { x: 0, y: 0 });
 
     setTimeout(() => {
       Matter.World.remove(world, this.body);
       delete balls[index];
     }, 1000);
-  }*/
+  }
 
 
 
